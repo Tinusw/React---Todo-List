@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.css'
 
 const Todo = ({ onClick, completed, text }) => (
-  <li
+  <div className='panel-body'
     onClick={onClick}
     style={{
       textDecoration: completed ? 'line-through' : 'none'
     }}
   >
     <h1>{text}</h1>
-  </li>
+  </div>
 )
 
 Todo.PropTypes = {
