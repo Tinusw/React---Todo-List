@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
 
 const Todo = ({ onClick, completed, text }) => (
   <li
