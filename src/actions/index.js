@@ -15,9 +15,9 @@ export const setVisibilityFilter = (filter) => {
   }
 }
 
-export const toggleTodo = (id) => {
+export const deleteTodo = (id) => {
   return {
-    type: 'TOGGLE_TODO',
+    type: 'DELETE_TODO',
     id
   }
 }
