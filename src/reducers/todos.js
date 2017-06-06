@@ -6,16 +6,6 @@ const todo = (state = {}, action) => {
         text: action.text,
         completed: false
       }
-    // case 'TOGGLE_TODO':
-    //   if (state.id !== action.id) {
-    //     return state.filter(({ id }) => id !== action.id)
-    //   }
-    //   return Object.assign({}, state, {
-    //     completed: !state.completed
-    //   })
-    // case 'DELETE_TODO':
-    //   return  state.filter(({ id }) => id !== action.id)
-
     default:
       return state
   }
