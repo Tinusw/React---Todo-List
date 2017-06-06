@@ -4,6 +4,7 @@ const todo = (state = {}, action) => {
       return {
         id: action.id,
         text: action.text,
+        description: action.text,
         completed: false
       }
     default:

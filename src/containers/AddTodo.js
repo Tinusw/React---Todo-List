@@ -4,6 +4,7 @@ import { addTodo } from '../actions'
 
 let AddTodo = ({ dispatch }) => {
   let input
+  let description
 
   return (
     <div className="col-lg-12 text-center">
@@ -17,6 +18,9 @@ let AddTodo = ({ dispatch }) => {
       }}>
         <input ref={node => {
           input = node
+        }} />
+        <input ref={node => {
+          description = node
         }} />
         <button type="submit" className="info">
           Add Todo
