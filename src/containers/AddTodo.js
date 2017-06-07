@@ -13,8 +13,9 @@ let AddTodo = ({ dispatch }) => {
         if (!input.value.trim()) {
           return
         }
-        dispatch(addTodo(input.value))
+        dispatch(addTodo(input.value, description.value))
         input.value = ''
+        input.description = ''
       }}>
         <input ref={node => {
           input = node
@@ -22,6 +23,7 @@ let AddTodo = ({ dispatch }) => {
         <input ref={node => {
           description = node
         }} />
+
         <button type="submit" className="info">
           Add Todo
         </button>

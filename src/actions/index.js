@@ -1,10 +1,11 @@
 import { v4 } from 'node-uuid'
 
-export const addTodo = (text) => {
+export const addTodo = (text, description) => {
   return {
     type: 'ADD_TODO',
     id: v4(),
-    text
+    text,
+    description
   }
 }
 
