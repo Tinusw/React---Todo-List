@@ -8,7 +8,7 @@ export class Modal extends React.Component {
   render() {
     const button1 = <button >Add Todo</button>;
     return (
-      <Portal closeOnEsc closeOnOutsideClick openByClickOn ={button1}>
+      <Portal closeOnEsc openByClickOn ={button1}>
         <PseudoModal>
           <AddTodo />
         </PseudoModal>
