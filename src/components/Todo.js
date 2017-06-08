@@ -7,7 +7,7 @@ const Todo = ({ onClick, completed, text, description }) => (
   <div className='panel-body'>
     <h1>{text}</h1>
     <h3>{description}</h3>
-    <button onClick={onClick}>delete</button>
+    <button onClick={onClick} >delete</button>
   </div>
 )
 
