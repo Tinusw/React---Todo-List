@@ -1,8 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
-import {PseudoModal} from '../components/Modal'
-
 
 let AddTodo = ({ dispatch }) => {
   let input
